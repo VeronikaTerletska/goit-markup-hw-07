@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #212121;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -42,6 +42,7 @@ p {
   max-width: 100%;
   height: auto;
 }
+
 .address {
   font-style: normal;
 }
@@ -50,7 +51,6 @@ p {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* border: 1px solid red; */
 }
 .visually-hidden {
   position: absolute;
@@ -63,20 +63,20 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /*---------------Header for Studio and Portfolio*--------------------/
 /* LINE */
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
+/* .main-nav {
   display: flex;
   align-items: center;
-}
+} */
 
-.logo-header {
+/* .main-nav__logo {
   font-weight: 700;
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -84,38 +84,38 @@ p {
   color: var(--primary-text-color);
 }
 
-.logo-header .sign {
+.main-nav__logo .main-nav__lable {
   color: var(--accent-color);
 }
 .site-nav {
   display: flex;
   margin-left: 93px;
-}
+} */
 
-.site-nav .item-nav + .item-nav {
+/* .site-nav .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
-.site-nav .link {
+.site-nav .site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
+} */
 
-.contacts-nav {
+/* .contacts {
   display: flex;
   margin-left: auto;
-}
+} */
 
-.contacts-nav .item-contacts + .item-contacts {
+/* .contacts .contacts-item + .contacts-item {
   margin-left: 50px;
-}
+} */
 
 /* .site-nav .item:not(:last-child),
 .contacts-nav .item:not(:last-child) {
   margin-right: 50px;
 } */
-.contacts-nav .link {
+/* .contacts-link {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-color);
@@ -128,32 +128,32 @@ p {
   transition-timing-function: var(--timing-function);
 }
 
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
-}
-.site-nav,
-.contacts-nav {
+} */
+/* .site-nav, */
+/* .contacts {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
+} */
+/* .site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
-}
+} */
 
-.site-nav .link {
+/* .site-nav__link {
   position: relative;
 
   transition-property: color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-}
-.site-nav .link.current {
+} */
+/* .site-nav__link--current {
   color: var(--accent-color);
 }
-.link.current::after {
+.site-nav__link--current::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -162,30 +162,30 @@ p {
   bottom: -1px;
   background: var(--accent-color);
   border-radius: 2px;
-}
+} */
 
-.item-contacts {
+/* .contacts-item {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.icon-mail {
+} */
+/* .contacts-icon-mail {
   margin-right: 10px;
   fill: currentColor;
 }
-.icon-mail:hover,
-.icon-mail:focus {
+.contacts-icon-mail:hover,
+.contacts-icon-mail:focus {
   fill: var(--accent-color);
 }
 
-.icon-tel {
+.contacts-icon-tel {
   margin-right: 10px;
   fill: currentColor;
 }
-.icon-tel:hover,
-.icon-tel:focus {
+.contacts-icon-tel:hover,
+.contacts-icon-tel:focus {
   fill: var(--accent-color);
-}
+} */
 
 /*----------------- Main index.html*-----------------/
 /*------------Hero----------------------------- */
@@ -316,7 +316,7 @@ p {
   line-height: 1.71;
   color: var(--text-color);
 }
-/*---------------------------- What we do -----------------------------*/
+/*---------------------------- Function -----------------------------*/
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -361,7 +361,7 @@ p {
   transform: translateX(-100%);
 }
 
-/*------------------------------- Our team------------------------ */
+/*------------------------------- Team------------------------ */
 .team {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -602,7 +602,9 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.address {
+  font-style: normal;
+}
 .address {
   display: block;
 }
