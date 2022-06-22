@@ -5,12 +5,13 @@
 .work-list {
   display: flex;
 }
-.work-list__item + .work-list__item {
-  margin-left: var(--card-set-gap);
-}
+
 .work-list__item {
   position: relative;
   overflow: hidden;
+  & + & {
+    margin-left: var(--card-set-gap);
+  }
 }
 
 .work-list__text {
@@ -36,8 +37,8 @@
   transition-duration: var(--duration);
   transition-timing-function: linear;
   transition-delay: 260ms;
-}
-.work-list__text:hover,
-.work-list__text:focus {
-  transform: translateX(-100%);
+  &:hover,
+  &:focus {
+    transform: translateX(-100%);
+  }
 }
