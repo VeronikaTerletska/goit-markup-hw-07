@@ -6,20 +6,20 @@
 }
 .specifics-list__item {
   width: 270px;
-}
-.specifics-list__item + .specifics-list__item {
-  margin-left: var(--card-set-gap);
+  & + & {
+    margin-left: var(--card-set-gap);
+  }
+  &::before {
+    content: '';
+    height: 120px;
+
+    display: block;
+    background-color: var(--filter-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 }
 
-.specifics-list__item::before {
-  content: '';
-  height: 120px;
-
-  display: block;
-  background-color: var(--filter-background-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
 .specifics__icon-antenna::before {
   background-image: url(../images/icon-antenna.svg);
   content: '';
