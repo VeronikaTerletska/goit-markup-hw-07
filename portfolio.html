@@ -19,12 +19,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <title>Портфолио</title>
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
-    <!--Page header-->
+    <!--------------------Page header----------------->
     <header class="header">
       <div class="container main-nav">
         <nav class="main-nav">
@@ -46,17 +46,17 @@
           </ul>
         </nav>
         <ul class="list contacts">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="contacts-link link">
-              <svg class="contacts-icon-mail" width="16" height="12">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link link">
+              <svg class="contacts__icon-mail" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="contacts-link link">
-              <svg class="contacts-icon-tel" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link link">
+              <svg class="contacts__icon-tel" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -65,17 +65,27 @@
         </ul>
       </div>
     </header>
-    <!--Portfolio-->
+    <!--------------------Portfolio------------------->
     <main>
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Галерея</h1>
           <ul class="list bottons-list">
-            <li class="bottons-item"><button type="button" class="filter current">Все</button></li>
-            <li class="bottons-item"><button type="button" class="filter">Веб-сайты</button></li>
-            <li class="bottons-item"><button type="button" class="filter">Приложения</button></li>
-            <li class="bottons-item"><button type="button" class="filter">Дизайн</button></li>
-            <li class="bottons-item"><button type="button" class="filter">Маркетинг</button></li>
+            <li class="bottons-list__item">
+              <button type="button" class="bottons-list__filter current">Все</button>
+            </li>
+            <li class="bottons-list__item">
+              <button type="button" class="bottons-list__filter">Веб-сайты</button>
+            </li>
+            <li class="bottons-list__item">
+              <button type="button" class="bottons-list__filter">Приложения</button>
+            </li>
+            <li class="bottons-list__item">
+              <button type="button" class="bottons-list__filter">Дизайн</button>
+            </li>
+            <li class="bottons-list__item">
+              <button type="button" class="bottons-list__filter">Маркетинг</button>
+            </li>
           </ul>
           <ul class="list card-set">
             <li class="card-set__item">
@@ -86,7 +96,7 @@
                     alt="Фото и контакты специалистов"
                     width="370"
                     height="294"
-                    class="card"
+                    class="card-thumb__img"
                   />
                   <p class="card-thumb__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -108,7 +118,7 @@
                     alt="Два баскетболиста с мячом"
                     width="370"
                     height="294"
-                    class="card"
+                    class="card-thumb__img"
                   />
                   <p class="card-thumb__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -130,7 +140,7 @@
                     alt="Логотип рестрана морской еды"
                     width="370"
                     height="294"
-                    class="card"
+                    class="card-thumb__img"
                   />
                   <p class="card-thumb__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -152,7 +162,7 @@
                     alt="Наушники"
                     width="370"
                     height="294"
-                    class="card"
+                    class="card-thumb__img"
                   />
                   <p class="card-thumb__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -174,7 +184,7 @@
                     alt="Две коробки"
                     width="370"
                     height="294"
-                    class="card"
+                    class="card-thumb__img"
                   />
                   <p class="card-thumb__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -196,7 +206,7 @@
                     alt="Монитор PC"
                     width="370"
                     height="294"
-                    class="card"
+                    class="card-thumb__img"
                   />
                   <p class="card-thumb__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -218,7 +228,7 @@
                     alt="Журнал"
                     width="370"
                     height="294"
-                    class="card"
+                    class="card-thumb__img"
                   />
                   <p class="card-thumb__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -240,7 +250,7 @@
                     alt="Этикетка"
                     width="370"
                     height="294"
-                    class="card"
+                    class="card-thumb__img"
                   />
                   <p class="card-thumb__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -262,7 +272,7 @@
                     alt="Печать на ноутбуке"
                     width="370"
                     height="294"
-                    class="card"
+                    class="card-thumb__img"
                   />
                   <p class="card-thumb__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -280,12 +290,12 @@
         </div>
       </section>
     </main>
-    <!-- Page footer -->
+    <!------------------- Page footer ------------------>
     <footer class="footer">
       <div class="container">
         <div class="logo">
-          <a href="./index.html" class="link logo-footer"
-            ><span class="sign">Web</span><span class="studio">Studio</span></a
+          <a href="./index.html" class="link logo__footer"
+            ><span class="logo__sign">Web</span><span class="logo__studio">Studio</span></a
           >
           <address>
             <ul class="address-list list">
@@ -294,15 +304,19 @@
                   href="https://goo.gl/maps/n7KvUpTxi8NSxzfY6"
                   target="_blank"
                   rel="nofollow noreferrer noopener"
-                  class="link address-link"
+                  class="link address-list__link"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li class="address-list__item">
-                <a href="mailto:info@devstudio.com" class="link mail-link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="link address-list__mail-link"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="address-list__item">
-                <a href="tel:+380961111111" class="link tel-link">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="link address-list__tel-link"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -311,29 +325,29 @@
           <p class="soc-networks__title">присоединяйтесь</p>
           <ul class="soc-list list">
             <li class="soc-list__item">
-              <a href="" class="join-soc-link link">
-                <svg class="join-soc-icon" width="20" height="20">
+              <a href="" class="soc-list__link link">
+                <svg class="soc-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-list__item">
-              <a href="" class="join-soc-link link">
-                <svg class="join-soc-icon" width="20" height="20">
+              <a href="" class="soc-list__link link">
+                <svg class="soc-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-list__item">
-              <a href="" class="join-soc-link link">
-                <svg class="join-soc-icon" width="20" height="20">
+              <a href="" class="soc-list__link link">
+                <svg class="soc-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-list__item">
-              <a href="" class="join-soc-link link">
-                <svg class="join-soc-icon" width="20" height="20">
+              <a href="" class="soc-list__link link">
+                <svg class="soc-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -342,20 +356,20 @@
         </div>
         <form action="#" class="signup-form">
           <p class="signup-form__title">Подпишитесь на рассылку</p>
-          <div class="footer-form">
+          <div class="signup">
             <label for="email">
               <input
                 type="email"
-                class="email-form"
+                class="signup__email"
                 name="email"
                 id="email"
                 placeholder="E-mail"
                 autocomplete="email"
                 required
             /></label>
-            <button type="submit" class="btn-signup">
+            <button type="submit" class="signup__btn">
               Подписаться
-              <svg class="signup-icon" width="24" height="24">
+              <svg class="signup__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
