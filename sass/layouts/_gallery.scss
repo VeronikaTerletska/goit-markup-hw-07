@@ -16,18 +16,13 @@
 
 .card-set__link {
   display: block;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-.card-set__link:hover,
-.card-set__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card-set__item:hover .card-thumb__text,
-.card-set__item:focus .card-thumb__text {
-  transform: translateY(0);
-}
 .card-thumb {
   position: relative;
   overflow: hidden;
@@ -51,6 +46,10 @@
   transition-property: transform, box-shadow;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+  .card-set__item:hover &,
+  .card-set__item:focus & {
+    transform: translateY(0);
+  }
 }
 
 .data-gallery {
