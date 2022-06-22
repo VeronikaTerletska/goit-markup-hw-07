@@ -23,16 +23,17 @@
   transition-property: border-color, color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
-.customers-list__link:hover,
-.customers-list__link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}
+
 .customers-list__icon {
   fill: currentColor;
-}
-.customers-list__icon:hover,
-.customers-list__icon:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
