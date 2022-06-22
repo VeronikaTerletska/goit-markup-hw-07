@@ -6,11 +6,11 @@
 .customers-list {
   display: flex;
 }
-.customers-list .customers-item + .customers-item {
+.customers-list__item + .customers-list__item {
   margin-left: var(--card-set-gap);
 }
 
-.customers-item-link {
+.customers-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,15 +24,15 @@
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-.customers-item-link:hover,
-.customers-item-link:focus {
+.customers-list__link:hover,
+.customers-list__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
-.company-icon {
+.customers-list__icon {
   fill: currentColor;
 }
-.company-icon:hover,
-.company-icon:focus {
+.customers-list__icon:hover,
+.customers-list__icon:focus {
   fill: var(--accent-color);
 }

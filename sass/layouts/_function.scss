@@ -1,19 +1,19 @@
-.work {
+.function {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .work-list {
   display: flex;
 }
-.work-list .work-item + .work-item {
+.work-list__item + .work-list__item {
   margin-left: var(--card-set-gap);
 }
-.work-item {
+.work-list__item {
   position: relative;
   overflow: hidden;
 }
 
-.thumb-work-text {
+.work-list__text {
   position: absolute;
   bottom: 3px;
 
@@ -37,7 +37,7 @@
   transition-timing-function: linear;
   transition-delay: 260ms;
 }
-.thumb-work-text:hover,
-.thumb-work-text:focus {
+.work-list__text:hover,
+.work-list__text:focus {
   transform: translateX(-100%);
 }

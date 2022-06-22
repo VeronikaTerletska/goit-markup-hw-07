@@ -27,7 +27,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.button-hero {
+.hero-button {
   border-radius: 4px;
   border: none;
   padding: 10px 32px;
@@ -47,7 +47,7 @@
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-.button-hero:focus,
-.button-hero:hover {
+.hero-button:focus,
+.hero-button:hover {
   background-color: #188ce8;
 }
