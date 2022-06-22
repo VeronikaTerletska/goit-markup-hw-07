@@ -19,10 +19,11 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  &:hover {
+    color: var(--accent-color);
+  }
 }
-.logo__footer:hover {
-  color: var(--accent-color);
-}
+
 .logo__footer .logo__sign {
   color: var(--accent-color);
 }
@@ -45,27 +46,35 @@
   transition-property: color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.address-list__link:hover,
-.address-list__link:focus {
-  color: var(--accent-color);
+
+.address-list__tel-link {
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.address-list__tel-link,
 .address-list__mail-link {
   color: rgba(255, 255, 255, 0.6);
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.address-list__tel-link:hover,
-.address-list__tel-link:focus {
-  color: var(--accent-color);
-}
-.address-list__mail-link:hover,
-.address-list__mail-link:focus {
-  color: var(--accent-color);
-}
+
 .soc-networks {
   display: block;
 }
@@ -88,9 +97,9 @@
   width: 44px;
   height: 44px;
   margin-right: 10px;
-}
-.soc-list__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .soc-list__link {
@@ -107,12 +116,11 @@
   transition-property: background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-}
-
-.soc-list__link:hover,
-.soc-list__link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-text-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+  }
 }
 
 .soc-list__icon,
@@ -147,11 +155,12 @@
   transition-property: border-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
 }
-.signup__email:focus,
-.signup__email:hover {
-  border-color: var(--accent-color);
-}
+
 .signup__btn {
   display: flex;
   align-items: center;
@@ -173,12 +182,14 @@
   transition-property: box-shadow, background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #188ce8;
+  }
 }
-.signup__btn:focus,
-.signup__btn:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: #188ce8;
-}
+
 .signup__icon {
   margin-left: 10px;
 }
