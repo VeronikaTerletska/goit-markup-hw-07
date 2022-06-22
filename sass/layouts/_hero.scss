@@ -46,8 +46,8 @@
   transition-property: background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-}
-.hero-button:focus,
-.hero-button:hover {
-  background-color: #188ce8;
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
 }
