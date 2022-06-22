@@ -119,16 +119,12 @@ body {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
-
 .site-nav__link--current {
   color: var(--accent-color);
 }
-
 .site-nav__link--current::after {
   content: "";
   position: absolute;
@@ -153,7 +149,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .contacts__item + .contacts__item {
   margin-left: 50px;
 }
@@ -169,9 +164,7 @@ body {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 
@@ -179,9 +172,7 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
-
-.contacts__icon-mail:hover,
-.contacts__icon-mail:focus {
+.contacts__icon-mail:hover, .contacts__icon-mail:focus {
   fill: var(--accent-color);
 }
 
@@ -189,9 +180,7 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
-
-.contacts__icon-tel:hover,
-.contacts__icon-tel:focus {
+.contacts__icon-tel:hover, .contacts__icon-tel:focus {
   fill: var(--accent-color);
 }
 
@@ -222,14 +211,11 @@ body {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.bottons-list__filter:focus,
-.bottons-list__filter:hover {
+.bottons-list__filter:focus, .bottons-list__filter:hover {
   background-color: var(--accent-color);
   color: var(--white-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .bottons-list__filter--current {
   background-color: var(--accent-color);
   color: var(--white-text-color);
@@ -257,15 +243,8 @@ body {
 .card-set__link {
   display: block;
 }
-
-.card-set__link:hover,
-.card-set__link:focus {
+.card-set__link:hover, .card-set__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card-set__item:hover .card-thumb__text,
-.card-set__item:focus .card-thumb__text {
-  transform: translateY(0);
 }
 
 .card-thumb {
@@ -290,6 +269,9 @@ body {
   transition-property: transform, box-shadow;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+}
+.card-set__item:hover .card-thumb__text, .card-set__item:focus .card-thumb__text {
+  transform: translateY(0);
 }
 
 .data-gallery {
@@ -337,7 +319,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
-
 .logo__footer:hover {
   color: var(--accent-color);
 }
@@ -368,27 +349,27 @@ body {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.address-list__link:hover,
-.address-list__link:focus {
+.address-list__link:hover, .address-list__link:focus {
   color: var(--accent-color);
 }
 
-.address-list__tel-link,
+.address-list__tel-link {
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+.address-list__tel-link:hover, .address-list__tel-link:focus {
+  color: var(--accent-color);
+}
+
 .address-list__mail-link {
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
-
-.address-list__tel-link:hover,
-.address-list__tel-link:focus {
-  color: var(--accent-color);
-}
-
-.address-list__mail-link:hover,
-.address-list__mail-link:focus {
+.address-list__mail-link:hover, .address-list__mail-link:focus {
   color: var(--accent-color);
 }
 
@@ -418,7 +399,6 @@ body {
   height: 44px;
   margin-right: 10px;
 }
-
 .soc-list__item:last-child {
   margin-right: 0;
 }
@@ -436,9 +416,7 @@ body {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.soc-list__link:hover,
-.soc-list__link:focus {
+.soc-list__link:hover, .soc-list__link:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
@@ -476,9 +454,7 @@ body {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.signup__email:focus,
-.signup__email:hover {
+.signup__email:focus, .signup__email:hover {
   border-color: var(--accent-color);
 }
 
@@ -502,9 +478,7 @@ body {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.signup__btn:focus,
-.signup__btn:hover {
+.signup__btn:focus, .signup__btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #188ce8;
 }
