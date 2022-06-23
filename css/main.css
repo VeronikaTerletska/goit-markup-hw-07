@@ -53,14 +53,6 @@ p {
   height: auto;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* border: 1px solid red; */
-}
-
 body {
   background: var(--primary-background-color);
   color: var(--primary-text-color);
@@ -75,6 +67,14 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* border: 1px solid red; */
 }
 
 .header {
@@ -704,8 +704,16 @@ body {
   border-color: var(--accent-color);
 }
 
-.modal__close-btn__icon {
+.modal__icon-btn {
   cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  margin: 0;
 }
 
 .modal__title {
@@ -724,33 +732,7 @@ body {
   transition-timing-function: var(--timing-function);
 }
 
-textarea {
-  resize: none;
-}
-
-input {
-  margin: 0;
-}
-
-.form-label {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.01em;
-  color: var(--text-color);
-}
-
-.icon-form {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  fill: var(--primary-text-color);
-  transition-property: fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.form-client-name {
+.client-name {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -760,7 +742,15 @@ input {
   transition-timing-function: var(--timing-function);
 }
 
-.modal-name-form {
+.client-name__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.client-name__form {
   margin: 0;
   padding-left: 42px;
   height: 40px;
@@ -771,25 +761,39 @@ input {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.form-client-name:focus-within .modal-name-form,
-.form-client-name:hover .modal-name-form {
+.client-name:focus-within .client-name__form, .client-name:hover .client-name__form {
   border: 1px solid var(--accent-color);
 }
 
-.form-client-name:focus-within .icon-form,
-.form-client-name:hover .icon-form {
+.client-name__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--primary-text-color);
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+.client-name:focus-within .client-name__icon, .client-name:hover .client-name__icon {
   fill: var(--accent-color);
 }
 
-.form-client-tel {
+.client-tel {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.modal-tel-form {
+.client-tel__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.client-tel__form {
   margin: 0;
   padding-left: 42px;
   height: 40px;
@@ -800,25 +804,39 @@ input {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.form-client-tel:focus-within .modal-tel-form,
-.form-client-tel:hover .modal-tel-form {
+.client-tel:focus-within .client-tel__form, .client-tel:hover .client-tel__form {
   border: 1px solid var(--accent-color);
 }
 
-.form-client-tel:focus-within .icon-form,
-.form-client-tel:hover .icon-form {
+.client-tel__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--primary-text-color);
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+.client-tel:focus-within .client-tel__icon, .client-tel:hover .client-tel__icon {
   fill: var(--accent-color);
 }
 
-.form-client-mail {
+.client-mail {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.modal-mail-form {
+.client-mail__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.client-mail__form {
   margin: 0;
   padding-left: 42px;
   height: 40px;
@@ -829,25 +847,39 @@ input {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.form-client-mail:focus-within .modal-mail-form,
-.form-client-mail:hover .modal-mail-form {
+.client-mail:focus-within .client-mail__form, .client-mail:hover .client-mail__form {
   border: 1px solid var(--accent-color);
 }
 
-.form-client-mail:focus-within .icon-form,
-.form-client-mail:hover .icon-form {
+.client-mail__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--primary-text-color);
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+.client-mail:focus-within .client-mail__icon, .client-mail:hover .client-mail__icon {
   fill: var(--accent-color);
 }
 
-.form-client-msg {
+.client-msg {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.modal-msg-form {
+.client-msg__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.client-msg__form {
   margin: 0;
   height: 120px;
   padding: 12px 16px;
@@ -858,26 +890,23 @@ input {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-
-.modal-msg-form:focus,
-.modal-msg-form:hover {
+.client-msg__form:focus, .client-msg__form:hover {
   border-color: var(--accent-color);
 }
-
-.modal-msg-form::placeholder {
+.client-msg__form::placeholder {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-label-deal {
+.form-deal {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.icon-check {
+.form-deal__icon {
   display: inline-block;
   width: 15px;
   height: 16px;
@@ -886,7 +915,7 @@ input {
   margin-right: 9px;
 }
 
-.modal-form-checkbox:checked + .icon-check {
+.form-deal__checkbox:checked + .form-deal__icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
@@ -896,19 +925,15 @@ input {
   background-origin: border-box;
 }
 
-.text-deal {
+.form-deal__text {
   margin-right: 5px;
 }
 
-.link-deal {
+.form-deal__link {
   color: var(--accent-color);
 }
 
-.form-icon-check {
-  display: inline-block;
-}
-
-.modal-form-btn {
+.client-form__btn {
   display: block;
   margin: 0 auto;
   border-radius: 4px;
@@ -927,7 +952,7 @@ input {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-.modal-form-btn:focus, .modal-form-btn:hover {
+.client-form__btn:focus, .client-form__btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
