@@ -4,10 +4,10 @@
 
 // base styles
 @import './base/reset';
-@import './base/container';
 @import './base/common';
 
 // components
+@import './components/container';
 
 // layuots
 @import './layouts/header';
