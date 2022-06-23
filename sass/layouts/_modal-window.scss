@@ -64,8 +64,14 @@
   }
 }
 
-.modal__close-btn__icon {
+.modal__icon-btn {
   cursor: pointer;
+}
+textarea {
+  resize: none;
+}
+input {
+  margin: 0;
 }
 .modal__title {
   margin-bottom: 12px;
@@ -83,32 +89,7 @@
   transition-timing-function: var(--timing-function);
 }
 
-textarea {
-  resize: none;
-}
-input {
-  margin: 0;
-}
-.form-label {
-  margin-bottom: 4px;
-
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  color: var(--text-color);
-}
-.icon-form {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  fill: var(--primary-text-color);
-
-  transition-property: fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.form-client-name {
+.client-name {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -118,7 +99,16 @@ input {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-.modal-name-form {
+.client-name__label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.client-name__form {
   margin: 0;
   padding-left: 42px;
 
@@ -130,23 +120,43 @@ input {
   transition-property: border-color, fill;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+  .client-name:focus-within &,
+  .client-name:hover & {
+    border: 1px solid var(--accent-color);
+  }
 }
-.form-client-name:focus-within .modal-name-form,
-.form-client-name:hover .modal-name-form {
-  border: 1px solid var(--accent-color);
-}
-.form-client-name:focus-within .icon-form,
-.form-client-name:hover .icon-form {
-  fill: var(--accent-color);
+.client-name__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--primary-text-color);
+
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  .client-name:focus-within &,
+  .client-name:hover & {
+    fill: var(--accent-color);
+  }
 }
 
-.form-client-tel {
+.client-tel {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.modal-tel-form {
+.client-tel__label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.client-tel__form {
   margin: 0;
   padding-left: 42px;
   height: 40px;
@@ -157,23 +167,43 @@ input {
   transition-property: border-color, fill;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-}
-.form-client-tel:focus-within .modal-tel-form,
-.form-client-tel:hover .modal-tel-form {
-  border: 1px solid var(--accent-color);
-}
-.form-client-tel:focus-within .icon-form,
-.form-client-tel:hover .icon-form {
-  fill: var(--accent-color);
+  .client-tel:focus-within &,
+  .client-tel:hover & {
+    border: 1px solid var(--accent-color);
+  }
 }
 
-.form-client-mail {
+.client-tel__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--primary-text-color);
+
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+  .client-tel:focus-within &,
+  .client-tel:hover & {
+    fill: var(--accent-color);
+  }
+}
+
+.client-mail {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.modal-mail-form {
+.client-mail__label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.client-mail__form {
   margin: 0;
   padding-left: 42px;
   height: 40px;
@@ -184,23 +214,42 @@ input {
   transition-property: border-color, fill;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-}
-.form-client-mail:focus-within .modal-mail-form,
-.form-client-mail:hover .modal-mail-form {
-  border: 1px solid var(--accent-color);
-}
-.form-client-mail:focus-within .icon-form,
-.form-client-mail:hover .icon-form {
-  fill: var(--accent-color);
+  .client-mail:focus-within &,
+  .client-mail:hover & {
+    border: 1px solid var(--accent-color);
+  }
 }
 
-.form-client-msg {
+.client-mail__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--primary-text-color);
+
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+  .client-mail:focus-within &,
+  .client-mail:hover & {
+    fill: var(--accent-color);
+  }
+}
+
+.client-msg {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-.modal-msg-form {
+.client-msg__label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+.client-msg__form {
   margin: 0;
   height: 120px;
   padding: 12px 16px;
@@ -211,24 +260,25 @@ input {
   transition-property: border-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
-.modal-msg-form:focus,
-.modal-msg-form:hover {
-  border-color: var(--accent-color);
-}
-.modal-msg-form::placeholder {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.form-label-deal {
+
+.form-deal {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.icon-check {
+.form-deal__icon {
   display: inline-block;
   width: 15px;
   height: 16px;
@@ -236,7 +286,7 @@ input {
   border-radius: 2px;
   margin-right: 9px;
 }
-.modal-form-checkbox:checked + .icon-check {
+.form-deal__checkbox:checked + .form-deal__icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
@@ -245,16 +295,14 @@ input {
   background-size: auto;
   background-origin: border-box;
 }
-.text-deal {
+.form-deal__text {
   margin-right: 5px;
 }
-.link-deal {
+.form-deal__link {
   color: var(--accent-color);
 }
-.form-icon-check {
-  display: inline-block;
-}
-.modal-form-btn {
+
+.client-form__btn {
   display: block;
 
   margin: 0 auto;
